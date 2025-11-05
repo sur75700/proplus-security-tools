@@ -1,0 +1,14 @@
+# ProPlus ignores
+scans/
+captures/
+*.pcap
+*.nmap
+*.gnmap
+*.xml
+
+# typical
+.env
+.vscode/
+__pycache__/
+*.pyc
+node_modules/
