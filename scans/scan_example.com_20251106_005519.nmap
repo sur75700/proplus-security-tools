@@ -1,0 +1,25 @@
+# Nmap 7.95 scan initiated Thu Nov  6 00:55:19 2025 as: /usr/lib/nmap/nmap --privileged -sC -sV -oA /home/arxiv/Projects/ProPlus/security_tools/scans/scan_example.com_20251106_005519 example.com
+Nmap scan report for example.com (23.215.0.136)
+Host is up (0.16s latency).
+Other addresses for example.com (not scanned): 23.215.0.138 23.192.228.80 23.220.75.245 23.220.75.232 23.192.228.84 2600:1406:5e00:6::17ce:bc12 2600:1408:ec00:36::1736:7f31 2600:1406:bc00:53::b81e:94c8 2600:1406:bc00:53::b81e:94ce 2600:1408:ec00:36::1736:7f24 2600:1406:5e00:6::17ce:bc1b
+rDNS record for 23.215.0.136: a23-215-0-136.deploy.static.akamaitechnologies.com
+Not shown: 998 filtered tcp ports (no-response)
+PORT    STATE SERVICE  VERSION
+80/tcp  open  http     AkamaiGHost (Akamai's HTTP Acceleration/Mirror service)
+|_http-title: Example Domain
+443/tcp open  ssl/http AkamaiGHost (Akamai's HTTP Acceleration/Mirror service)
+|_http-title: Example Domain
+|_ssl-date: TLS randomness does not represent time
+| ssl-cert: Subject: commonName=*.example.com/organizationName=Internet Corporation for Assigned Names and Numbers/stateOrProvinceName=California/countryName=US
+| Subject Alternative Name: DNS:*.example.com, DNS:example.com
+| Not valid before: 2025-01-15T00:00:00
+|_Not valid after:  2026-01-15T23:59:59
+| tls-alpn: 
+|   http/1.1
+|_  http/1.0
+| tls-nextprotoneg: 
+|   http/1.1
+|_  http/1.0
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Nov  6 00:55:57 2025 -- 1 IP address (1 host up) scanned in 38.01 seconds
